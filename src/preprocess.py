@@ -39,25 +39,24 @@ def preprocess_text(text):
     text = text.lower()
     
     # 2. Remove punctuation and special characters (keep only alphanumeric and spaces)
-    text = re.sub(r'[^a-z0-9\s]', '', text)
+    # Note: We keep spaces to allow tokenization.
+    text = re.sub(r'[^a-z0-9\s]', ' ', text)
     
     # 3. Tokenization
-    # Fallback to simple split if tokenization fails due to un-downloaded punkt
     try:
         tokens = nltk.word_tokenize(text)
     except LookupError:
-        nltk.download('punkt')
-        nltk.download('punkt_tab')
-        tokens = nltk.word_tokenize(text)
+        # If tokenization fails, fallback to simple splitting
+        tokens = text.split()
     
     # 4 & 5. Remove stopwords and Lemmatize
     clean_tokens = [
         lemmatizer.lemmatize(word) 
         for word in tokens 
-        if word not in stop_words
+        if word not in stop_words and len(word) > 1
     ]
     
-    # Join back into a single string
+    # Return cleaned string
     return " ".join(clean_tokens)
 
 if __name__ == "__main__":

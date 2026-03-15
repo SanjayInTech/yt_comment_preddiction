@@ -1,81 +1,83 @@
-[nltk_data] Downloading package stopwords to
-[nltk_data]     C:\Users\welcome\AppData\Roaming\nltk_data...
+[nltk_data] Downloading package stopwords to C:\Users\Sanjai
+[nltk_data]     Infitech\AppData\Roaming\nltk_data...
 [nltk_data]   Package stopwords is already up-to-date!
-[nltk_data] Downloading package wordnet to
-[nltk_data]     C:\Users\welcome\AppData\Roaming\nltk_data...
+[nltk_data] Downloading package wordnet to C:\Users\Sanjai
+[nltk_data]     Infitech\AppData\Roaming\nltk_data...
 [nltk_data]   Package wordnet is already up-to-date!
-[nltk_data] Downloading package punkt to
-[nltk_data]     C:\Users\welcome\AppData\Roaming\nltk_data...
+[nltk_data] Downloading package punkt to C:\Users\Sanjai
+[nltk_data]     Infitech\AppData\Roaming\nltk_data...
 [nltk_data]   Package punkt is already up-to-date!
-[nltk_data] Downloading package punkt_tab to
-[nltk_data]     C:\Users\welcome\AppData\Roaming\nltk_data...
+[nltk_data] Downloading package punkt_tab to C:\Users\Sanjai
+[nltk_data]     Infitech\AppData\Roaming\nltk_data...
 [nltk_data]   Package punkt_tab is already up-to-date!
 Successfully imported train_and_evaluate
-Loading data from f:\jana\youtube_comment_classifier\src\..\data\dataset.csv...
+Loading data from E:\my work\23mss018\jana\src\..\data\dataset.csv...
 Preprocessing text...
+Filtered 1 empty comments after preprocessing.
 Extracting features (TF-IDF)...
 
 --- Model Evaluation ---
 
-Naive Bayes Accuracy: 0.0000
+Naive Bayes Accuracy: 0.6875
 Confusion Matrix:
-[[0 1 0 0]
- [0 0 0 0]
- [0 1 0 0]
- [0 2 0 0]]
+[[13  6  0  1]
+ [ 4 15  1  0]
+ [ 1  6 10  3]
+ [ 0  3  0 17]]
 Classification Report:
               precision    recall  f1-score   support
 
-       Funny       0.00      0.00      0.00       1.0
-        Hate       0.00      0.00      0.00       0.0
- Informative       0.00      0.00      0.00       1.0
-        Spam       0.00      0.00      0.00       2.0
+       Funny       0.72      0.65      0.68        20
+        Hate       0.50      0.75      0.60        20
+ Informative       0.91      0.50      0.65        20
+        Spam       0.81      0.85      0.83        20
 
-    accuracy                           0.00       4.0
-   macro avg       0.00      0.00      0.00       4.0
-weighted avg       0.00      0.00      0.00       4.0
+    accuracy                           0.69        80
+   macro avg       0.74      0.69      0.69        80
+weighted avg       0.74      0.69      0.69        80
 
 
-Logistic Regression Accuracy: 0.0000
+Logistic Regression Accuracy: 0.6875
 Confusion Matrix:
-[[0 1 0 0]
- [0 0 0 0]
- [0 1 0 0]
- [0 2 0 0]]
+[[14  5  0  1]
+ [ 5 14  1  0]
+ [ 2  4 11  3]
+ [ 0  3  1 16]]
 Classification Report:
               precision    recall  f1-score   support
 
-       Funny       0.00      0.00      0.00       1.0
-        Hate       0.00      0.00      0.00       0.0
- Informative       0.00      0.00      0.00       1.0
-        Spam       0.00      0.00      0.00       2.0
+       Funny       0.67      0.70      0.68        20
+        Hate       0.54      0.70      0.61        20
+ Informative       0.85      0.55      0.67        20
+        Spam       0.80      0.80      0.80        20
 
-    accuracy                           0.00       4.0
-   macro avg       0.00      0.00      0.00       4.0
-weighted avg       0.00      0.00      0.00       4.0
+    accuracy                           0.69        80
+   macro avg       0.71      0.69      0.69        80
+weighted avg       0.71      0.69      0.69        80
 
 
-SVM Accuracy: 0.0000
+SVM Accuracy: 0.7250
 Confusion Matrix:
-[[0 1 0 0]
- [0 0 0 0]
- [0 1 0 0]
- [0 2 0 0]]
+[[14  4  1  1]
+ [ 4 16  0  0]
+ [ 2  4 12  2]
+ [ 0  4  0 16]]
 Classification Report:
               precision    recall  f1-score   support
 
-       Funny       0.00      0.00      0.00       1.0
-        Hate       0.00      0.00      0.00       0.0
- Informative       0.00      0.00      0.00       1.0
-        Spam       0.00      0.00      0.00       2.0
+       Funny       0.70      0.70      0.70        20
+        Hate       0.57      0.80      0.67        20
+ Informative       0.92      0.60      0.73        20
+        Spam       0.84      0.80      0.82        20
 
-    accuracy                           0.00       4.0
-   macro avg       0.00      0.00      0.00       4.0
-weighted avg       0.00      0.00      0.00       4.0
+    accuracy                           0.72        80
+   macro avg       0.76      0.73      0.73        80
+weighted avg       0.76      0.72      0.73        80
 
 
-Best Model: Naive Bayes with Accuracy: 0.0000
-Saving best model to f:\jana\youtube_comment_classifier\src\..\model\classifier.pkl...
-Saving vectorizer to f:\jana\youtube_comment_classifier\src\..\model\vectorizer.pkl...
+Best Model: SVM with Accuracy: 0.7250
+Saving best model to E:\my work\23mss018\jana\src\..\model\classifier.pkl...
+Saving vectorizer to E:\my work\23mss018\jana\src\..\model\vectorizer.pkl...
+Saving metrics to E:\my work\23mss018\jana\src\..\model\metrics.json...
 Training complete!
 Training finished.

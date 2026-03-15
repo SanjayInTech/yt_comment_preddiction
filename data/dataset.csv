@@ -200,3 +200,132 @@ comment,category
 "Your editing made this even worse to watch.",Hate
 "I feel dumber after watching this.",Hate
 "You say you're helping, but you're not.",Hate
+
+"This logic is so circular, it reminds me of a loading icon.",Funny
+"I tried to catch some fog earlier, but I mist.",Funny
+"Why did the developer go broke? Because he used up all his cache.",Funny
+"My code doesn't work and I don't know why. My code works and I don't know why.",Funny
+"I'm not lazy, I'm just on energy saving mode.",Funny
+"I think my keyboard is broken, it keeps typing what I think.",Funny
+"You edit like a pro, the comic timing is 11/10.",Funny
+"That face at 4:12 is a mood.",Funny
+"I haven't laughed this hard since the last time I tried to explain my project.",Funny
+"The bloopers are better than the actual video!",Funny
+"That transition was smoother than my brain during a math test.",Funny
+"I'm sending this to my boss as my resignation letter.",Funny
+"The way you said 'wow' sounded like a deflating balloon.",Funny
+"This is the peak of human achievement.",Funny
+"I literally forgot how to breathe for a second.",Funny
+"Your humor is so dry it's basically hydration.",Funny
+"How do you think of these things? My brain just says 'error'.",Funny
+"I wish I could subscribe twice for that joke.",Funny
+"The sound effects are carrying this whole channel lol.",Funny
+"If confusion was an art, you'd be Picasso.",Funny
+"I came for the tutorial, stayed for the roast.",Funny
+"This video is basically a legal way to have fun.",Funny
+"I showed this to my cat and now he's a dog.",Funny
+"That plot twist was more unexpected than a stable Windows update.",Funny
+"I feel attacked by how relatable this is.",Funny
+"You should have a Netflix special.",Funny
+"The internal screaming is loud in this one.",Funny
+"I had to rewatch this 10 times to get all the jokes.",Funny
+"This is better than most movies I've seen this year.",Funny
+"You have the charisma of a golden retriever.",Funny
+"WIN A BRAND NEW SUV! CLICK TO ENTER DRAWING: http://scam-win.site",Spam
+"Get 5000+ followers in 1 hour! Trust me it works! Link in bio.",Spam
+"Bitcoin glitch! Send 0.1 BTC and get 1.0 BTC back instantly!",Spam
+"Verified method to make $10k per month using only your phone.",Spam
+"I found a secret store with 90% off all gaming consoles!",Spam
+"Stop working a 9-5! Use my secret automation tool to retire early.",Spam
+"Who wants to join my group for sub4sub? Drop your links!",Spam
+"Is anyone here looking for a sugar daddy? DM me for details.",Spam
+"Check out this new token before it goes to the moon! 1000x potential!",Spam
+"I am giving away $500 to the first 50 people who follow me.",Spam
+"Free trials for premium VPN and Netflix, no credit card needed.",Spam
+"Look at what this celebrity said about me! Huge scandal! [link]",Spam
+"Don't ignore! Your spiritual guide has a message for you, click here.",Spam
+"Get any game for free with this crack tool. Totally safe!",Spam
+"I lost 50lbs in 2 weeks with this one simple trick!",Spam
+"Your account has been compromised! Click here to secure it now.",Spam
+"Official giveaway! You won a gift card! Claim it at: [link]",Spam
+"This is the best way to earn passive income while you sleep.",Spam
+"Need more views? I can help you reach 1M views fast.",Spam
+"Why pay for courses when you can learn for free on my site?",Spam
+"I made $200 today while sitting in the park. Ask me how.",Spam
+"The government doesn't want you to know about this tax loophole.",Spam
+"Cheap flight tickets for your dream vacation! Book now!",Spam
+"Win an iPhone 16! Just type 'DONE' and click the link.",Spam
+"Instant cash for your old phones, highest prices paid.",Spam
+"Are you tired of feeling tired? Try our secret supplement.",Spam
+"Join our crypto signal group for daily profits. 99% win rate.",Spam
+"Get paid to test new apps and games. High payouts!",Spam
+"Unlock any phone password with this software. [link]",Spam
+"This is the only trading bot that actually works.",Spam
+"Could you explain the difference between L1 and L2 regularization?",Informative
+"What happens if we set the learning rate too high in this scenario?",Informative
+"The way you explained gradient descent using a valley analogy was great.",Informative
+"Can this model be exported to TensorFlow Lite for mobile use?",Informative
+"I noticed a small typo in the code at 12:45, it should be 'x' not 'y'.",Informative
+"Does TF-IDF work better than Word2Vec for small datasets?",Informative
+"What is the time complexity of the training algorithm you used?",Informative
+"I appreciate you mentioning the limitations of this approach.",Informative
+"Could you link the research paper you mentioned in the intro?",Informative
+"How does the performance change if we increase the number of features?",Informative
+"The section on hyperparameters was exactly what I needed to see.",Informative
+"Wait, so the bias term is updated every iteration or only at the end?",Informative
+"This is a great deep dive into the math behind the library.",Informative
+"Are there any specific preprocessing steps for non-English text?",Informative
+"I like how you compared the precision and recall scores.",Informative
+"What are the best libraries for visualizing the decision boundary?",Informative
+"The explanation of cross-validation helped me understand overfitting.",Informative
+"How do we handle categorical variables with high cardinality?",Informative
+"Can you show how to deploy this using Docker in the next video?",Informative
+"The use of Pandas for data cleaning here is very efficient.",Informative
+"I didn't realize that feature scaling was so important for SVM.",Informative
+"Does the model handle imbalanced classes properly by default?",Informative
+"What is the best way to monitor model drift in production?",Informative
+"I love the breakdown of the different loss functions.",Informative
+"Is it better to use a linear kernel or a Gaussian kernel here?",Informative
+"Could you explain how to interpret the feature importance plot?",Informative
+"What are the pros and cons of using a pre-trained vectorizer?",Informative
+"This tutorial gave me a solid foundation for my upcoming project.",Informative
+"The code documentation you provided is extremely thorough.",Informative
+"I appreciate the timestamps, they make it easy to find specific parts.",Informative
+"This video is utter garbage, you suck at teaching.",Hate
+"Go back to school, you clearly have no talent for this.",Hate
+"I hope your channel gets deleted, it's a disgrace to YouTube.",Hate
+"You sound like a robot, your voice is unbearable.",Hate
+"Stop bothering everyone with these useless tutorials.",Hate
+"Imagine thinking you're smart while making such basic mistakes.",Hate
+"This is why people hate tech channels, too much fluff.",Hate
+"You are just a copycat with no original ideas.",Hate
+"The quality of this video is as low as your IQ.",Hate
+"I wasted my time watching this trash content.",Hate
+"I'm reporting this video for being a total letdown.",Hate
+"You should quit while you're ahead, this is embarrassing.",Hate
+"Nobody cares about your opinion, stick to the script.",Hate
+"The editing is so bad it gave me a headache.",Hate
+"You talk way too much, just get to the point already.",Hate
+"This is so boring, I'd rather watch paint dry.",Hate
+"You have the personality of a wet napkin.",Hate
+"I can't believe I actually clicked on this clickbait.",Hate
+"Everything you said is wrong, do some research next time.",Hate
+"This video is a mess, just like your career.",Hate
+"You don't deserve any subscribers for this low effort.",Hate
+"I hope no one follows your terrible advice.",Hate
+"You are so arrogant for someone who knows so little.",Hate
+"This video belongs in the bin with the rest of your channel.",Hate
+"I unsubscribed because of how annoying you are.",Hate
+"Your attitude is terrible, learn some humility.",Hate
+"Stop spamming my feed with this nonsense.",Hate
+"This is a prime example of why tutorials are failing.",Hate
+"You should be ashamed of yourself for posting this.",Hate
+"I lost interest in 30 seconds, pure trash.",Hate
+This is a test comment for verification.,Informative
+This is a test comment for verification.,Informative
+This is a test comment for verification.,Informative
+This is a test comment for verification.,Informative
+This is a test comment for verification.,Informative
+This is a great tutorial!,Funny
+This is a great tutorial!,Informative
+This is a great tutorial!,Informative

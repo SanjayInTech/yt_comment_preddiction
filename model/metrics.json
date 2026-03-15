@@ -1,0 +1,11 @@
+{
+    "best_model": "SVM",
+    "accuracy": 0.7439024390243902,
+    "dataset_size": 328,
+    "class_distribution": {
+        "Informative": 86,
+        "Funny": 82,
+        "Spam": 80,
+        "Hate": 80
+    }
+}

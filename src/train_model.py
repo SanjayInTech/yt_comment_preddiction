@@ -13,6 +13,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
+import json
 from src.preprocess import preprocess_text
 
 def train_and_evaluate():
@@ -28,12 +29,24 @@ def train_and_evaluate():
     # 2. Preprocess Text
     print("Preprocessing text...")
     df['clean_comment'] = df['comment'].apply(preprocess_text)
+    
+    # Clean category labels (strip whitespace)
+    df['category'] = df['category'].str.strip()
+
+    # Filter out samples that became empty after preprocessing to avoid noise
+    initial_len = len(df)
+    df = df[df['clean_comment'].str.strip() != ""]
+    print(f"Filtered {initial_len - len(df)} empty comments after preprocessing.")
 
     # 3. Train-Test Split
     X = df['clean_comment']
     y = df['category']
-    # Small test size due to limited sample dataset
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+    
+    # Ensure all classes are represented in split by using stratify
+    # and use a larger test size if possible, though 0.25 is fine for ~200 rows.
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.25, random_state=42, stratify=y
+    )
 
     # 4. Feature Extraction (TF-IDF)
     print("Extracting features (TF-IDF)...")
@@ -89,6 +102,19 @@ def train_and_evaluate():
     joblib.dump(best_model, model_path)
     print(f"Saving vectorizer to {vectorizer_path}...")
     joblib.dump(vectorizer, vectorizer_path)
+    
+    # 8. Save metrics for the UI
+    metrics_path = os.path.join(model_dir, 'metrics.json')
+    class_dist = df['category'].value_counts().to_dict()
+    metrics = {
+        "best_model": best_model_name,
+        "accuracy": best_accuracy,
+        "dataset_size": len(df),
+        "class_distribution": class_dist
+    }
+    print(f"Saving metrics to {metrics_path}...")
+    with open(metrics_path, 'w') as f:
+        json.dump(metrics, f, indent=4)
     
     print("Training complete!")
 
